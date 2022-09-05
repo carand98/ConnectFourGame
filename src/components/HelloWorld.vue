@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2>Filter LearnVue Articles</h2>
-    <input type="text" placeholder="Filter Search" v-model="query" />
+    <h2>Player 1</h2>
+    <input type="text" placeholder="Username" v-model="query" />
 
-    <button @click="reset">Reset</button>
+    <button @click="reset">Submit</button>
 
     <div>
       {{ query }}
@@ -44,5 +44,8 @@ li {
 }
 a {
   color: #42b983;
+}
+button {
+  margin-left: 5px;
 }
 </style>

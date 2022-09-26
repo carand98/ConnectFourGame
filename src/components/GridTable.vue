@@ -9,7 +9,7 @@
       </thead>
       <tbody>
         <tr v-for="row in rows" :key="row">
-          <td v-for="body_cell in columns" :key="body_cell"> {{ body_cell }}</td>
+          <td v-for="body_cell in columns" :key="body_cell"> </td>
         </tr>
       </tbody>
     </table>
@@ -27,15 +27,24 @@ const rows = 7;
 </script>
 
 <style>
+
+table {
+  background-color: blueviolet;
+}
 /*  th{
     padding: 5px;
   }
 */
-/* td {
+ td {
+  background-color: white;
   padding: 2.5px;
-  width: calc(100% / 6);
-} */
-
+  width: 80px;
+  height: 80px;
+  /* width: calc(100% / 6);
+  height: calc(100% / 6); */
+  border-radius: 50%;
+} 
+/* 
 #Connect4Layout {
   margin: 20px 0;
 }
@@ -96,5 +105,5 @@ const rows = 7;
   #Connect4Layout .with-header tr td:before {
     display: none;
   }
-}
+} */
 </style>

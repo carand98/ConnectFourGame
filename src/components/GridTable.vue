@@ -1,9 +1,6 @@
 <template>
   <div class="Connec4Layout">
     <table ref="table">
-      <thead>
-        <th v-for="cell in columns" :key="cell"></th>
-      </thead>
       <tbody>
         <tr v-for="row in rows" :key="row">
           <td v-for="body_cell in columns" :key="body_cell"></td>
@@ -35,6 +32,12 @@ table {
   flex-direction: column;
   max-width: 350px;
   gap: 5px;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 td {

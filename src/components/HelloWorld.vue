@@ -1,14 +1,8 @@
 <template>
   <div>
-    <h2>Player 1</h2>
-    <input type="text" placeholder="Username" v-model="query" />
-
-    <button @click="reset">Submit</button>
-
     <div>
       {{ query }}
     </div>
-    
   </div>
 </template>
 
@@ -31,6 +25,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+* {
+  margin-top: 100px;
+}
 h3 {
   margin: 40px 0 0;
 }
